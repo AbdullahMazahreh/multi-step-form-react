@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.button {
+  padding: 15px 25px;
+  border: none;
+
+  font-weight: weight("medium");
+  font-size: 18px;
+  color: white;
+  font-family: "Ubuntu";
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.92;
+  }
+}
+
+.next {
+  background-color: $primaryMarineBlue;
+}
+
+.confirm {
+  background-color: $primaryPurplishBlue;
+}

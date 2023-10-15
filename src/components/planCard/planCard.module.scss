@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.planInput {
+  display: none;
+
+  &:checked + .planCard {
+    border: 1px solid $primaryMarineBlue;
+    background-color: $neutralAlabaster;
+  }
+}
+
+.planCard {
+  height: 190px;
+  width: 160px;
+  display: flex;
+  border: 1px solid $neutralLightGray;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+
+  &_image {
+    height: 45px;
+  }
+
+  &_planInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &_planName {
+      font-size: 18px;
+      color: $primaryMarineBlue;
+      font-weight: weight("medium");
+    }
+
+    &_planPrice {
+      font-size: 14px;
+      color: $neutralCoolGray;
+    }
+
+    &_discount {
+      font-size: 14px;
+      color: $primaryMarineBlue;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .planCard {
+    flex-direction: row;
+    height: auto;
+    width: 200px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.oneStep {
+  display: flex;
+  gap: 15px;
+
+  &_indicater {
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+
+    &_active {
+      background-color: $primaryLightBlue;
+      color: black;
+      border: 1px solid $primaryLightBlue;
+    }
+  }
+
+  &_nameWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+
+    &_stepCount {
+      font-size: 12px;
+      color: $neutralLightGray;
+    }
+
+    &_stepName {
+      font-weight: weight("bold");
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .oneStep {
+    &_nameWrapper {
+      display: none;
+    }
+  }
+}

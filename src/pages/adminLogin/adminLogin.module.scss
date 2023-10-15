@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.loginForm {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &_loginWrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .loginForm {
+    background-color: white;
+    height: 100vh;
+  }
+}

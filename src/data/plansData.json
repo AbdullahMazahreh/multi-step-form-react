@@ -1,0 +1,23 @@
+[
+  {
+    "img": "../../assets/imgs/icon-arcade.svg",
+    "moPrice": 9,
+    "yrPrice": 90,
+    "title": "Arcade",
+    "yearlyDiscount": "2 months"
+  },
+  {
+    "img": "advacned",
+    "moPrice": 12,
+    "yrPrice": 120,
+    "title": "Advanced",
+    "yearlyDiscount": "2 months"
+  },
+  {
+    "img": "pro",
+    "moPrice": 15,
+    "yrPrice": 150,
+    "title": "Pro",
+    "yearlyDiscount": "2 months"
+  }
+]

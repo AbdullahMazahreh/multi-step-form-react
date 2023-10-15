@@ -1,0 +1,30 @@
+@import "../../styles/_variables.scss";
+
+.headingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_heading {
+    font-size: 38px;
+    font-weight: weight("bold");
+    color: $primaryMarineBlue;
+  }
+
+  &_description {
+    font-size: 18px;
+    color: $neutralCoolGray;
+  }
+}
+
+@media (max-width: 600px) {
+  .headingWrapper {
+    &_heading {
+      font-size: 28px;
+    }
+
+    &_description {
+      font-size: 16px;
+    }
+  }
+}

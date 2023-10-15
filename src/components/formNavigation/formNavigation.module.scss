@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.navigationContainer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  &_button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-family: "Ubuntu";
+    font-weight: weight("medium");
+    color: $neutralCoolGray;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryMarineBlue;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .navigationContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+  }
+}

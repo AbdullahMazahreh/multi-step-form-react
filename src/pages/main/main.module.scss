@@ -1,0 +1,43 @@
+@import "../../styles/_variables.scss";
+
+.container {
+  height: 100%;
+  display: flex;
+
+  &_formWrapper {
+    padding: 50px 100px 0px 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    &_formWrapper {
+      padding: 50px 50px 0px 50px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 470px) {
+  .container {
+    &_formWrapper {
+      padding: 50px 20px 0px 20px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    &_formWrapper {
+      padding: 50px 5px 0px 5px;
+    }
+  }
+}

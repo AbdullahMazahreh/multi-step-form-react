@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.planSelector {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.planTypeToggler {
+  height: 40px;
+  width: 100%;
+  background-color: $neutralAlabaster;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &_togglerWrapper {
+    padding: 3px;
+    height: 20px;
+    width: 40px;
+    background-color: $primaryMarineBlue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    &_yearly {
+      justify-content: flex-end;
+    }
+
+    &_ball {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+
+  &_planText {
+    color: $neutralCoolGray;
+    font-weight: weight("medium");
+
+    &_active {
+      color: $primaryMarineBlue;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .planSelector {
+    justify-content: center;
+  }
+}

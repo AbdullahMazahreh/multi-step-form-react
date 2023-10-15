@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.summaryWrapper {
+  width: 100%;
+
+  &_specificPrice {
+    background-color: $neutralAlabaster;
+    border-radius: 10px;
+    padding: 20px;
+
+    &_planType {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $neutralLightGray;
+
+      &_title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_text {
+          font-weight: weight("medium");
+          color: $primaryMarineBlue;
+        }
+
+        &_edit {
+          font-size: 14px;
+          color: $neutralCoolGray;
+          text-decoration: underline;
+          cursor: pointer;
+
+          &:hover {
+            color: $primaryPastelBlue;
+          }
+        }
+      }
+
+      &_price {
+        font-weight: weight("bold");
+        color: $primaryMarineBlue;
+      }
+    }
+
+    &_addOns {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &_totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    &_title {
+      font-size: 14px;
+      color: $neutralCoolGray;
+    }
+
+    &_price {
+      font-size: 20px;
+      font-weight: weight("bold");
+      color: $primaryPurplishBlue;
+    }
+  }
+}

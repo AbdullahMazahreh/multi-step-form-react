@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.textInputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &_label {
+    display: flex;
+    justify-content: space-between;
+
+    .label_title {
+      color: $primaryMarineBlue;
+    }
+
+    .label_error {
+      color: $primaryStrawberryRed;
+      font-weight: weight("medium");
+    }
+  }
+
+  &_inputField {
+    padding: 15px;
+    border: 1px solid $neutralLightGray;
+    border-radius: 10px;
+    font-weight: weight("medium");
+    font-size: 16px;
+    font-family: "Ubuntu";
+    color: $primaryMarineBlue;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      color: $neutralCoolGray;
+    }
+
+    &:focus {
+      border-color: $primaryMarineBlue;
+    }
+
+    &.error {
+      border-color: $primaryStrawberryRed;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

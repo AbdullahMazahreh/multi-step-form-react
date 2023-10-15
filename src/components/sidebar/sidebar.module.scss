@@ -1,0 +1,58 @@
+@import "../../styles/_variables.scss";
+
+.container {
+  height: 100%;
+  background: url("../../assets/imgs/bg-sidebar-desktop.svg");
+  width: 275px;
+  background-size: cover;
+  flex-shrink: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &_stepsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    flex-grow: 1;
+  }
+
+  &_adminLogin {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: $neutralMagnolia;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $neutralLightGray;
+    color: $primaryMarineBlue;
+    text-decoration: none;
+    font-weight: weight("bold");
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 30px $neutralLightGray;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    background: url("../../assets/imgs/bg-sidebar-mobile.svg");
+    width: 100%;
+    background-size: cover;
+    gap: 30px;
+
+    &_stepsWrapper {
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    &_adminLogin {
+      height: 40px;
+    }
+  }
+}

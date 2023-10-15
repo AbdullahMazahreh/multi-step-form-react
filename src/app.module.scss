@@ -1,0 +1,19 @@
+@import "./styles/global.scss";
+@import "./styles/variables";
+
+.container {
+  min-height: 100vh;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $neutralMagnolia;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    align-items: flex-start;
+    position: relative;
+  }
+}
